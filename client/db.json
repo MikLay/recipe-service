@@ -1,0 +1,58 @@
+{
+  "recipes": [
+    {
+      "id": 2,
+      "name": "Best Chocolate Chip Cookies",
+      "picture": "https://images.media-allrecipes.com/userphotos/300x300/4462051.jpg",
+      "category": "1",
+      "shortDesc": "Best Chocolate Chip Cookies",
+      "longDesc": "In a large bowl, whisk egg and milk. Stir in the cheese, oats, onion and salt. Crumble beef over mixture and mix well. Shape into eight loaves; place in a greased 13x9-in. baking dish. In a small bowl, combine the ketchup, brown sugar and mustard; spoon over loaves.\nBake, uncovered, at 350° for 25-30 minutes or until no pink remains and a thermometer reads 160°.",
+      "createDate": "2020-04-10 23:15:10"
+    },
+    {
+      "id": 3,
+      "name": "Teriyaki Shrimps",
+      "picture": "https://images.media-allrecipes.com/userphotos/300x300/6884311.jpg",
+      "category": "1",
+      "shortDesc": "These savory-sweet shrimp skewers are easy to make and cook in just a few minutes. They are perfect for summer weeknights or weekend dinner parties.",
+      "longDesc": "In a large bowl, whisk egg and milk. Stir in the cheese, oats, onion and salt. Crumble beef over mixture and mix well. Shape into eight loaves; place in a greased 13x9-in. baking dish. In a small bowl, combine the ketchup, brown sugar and mustard; spoon over loaves.\nBake, uncovered, at 350° for 25-30 minutes or until no pink remains and a thermometer reads 160°.",
+      "createDate": "2020-04-01 23:15:10"
+    },
+    {
+      "id": 4,
+      "name": "ALi'l Cheddar Meat Loaves",
+      "picture": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/chorizo-mozarella-gnocchi-bake-cropped.jpg",
+      "category": "1",
+      "shortDesc": "Easy and delicious soup with a nice thickness. You can make it in the Instant Pot® or on the stovetop. When this cools, it will be very thick, but it thins out when reheated. Freezes very well.",
+      "longDesc": "In a large bowl, whisk egg and milk. Stir in the cheese, oats, onion and salt. Crumble beef over mixture and mix well. Shape into eight loaves; place in a greased 13x9-in. baking dish. In a small bowl, combine the ketchup, brown sugar and mustard; spoon over loaves.Bake, uncovered, at 350° for 25-30 minutes or until no pink remains and a thermometer reads 160°.",
+      "createDate": "2020-04-04 23:15:10"
+    },
+    {
+      "id": 6,
+      "name": "Mexican Taco Meatloaf",
+      "picture": "https://www.tasteofhome.com/wp-content/uploads/2017/10/Enchilada-Casser-Ole-_EXPS_WRSM17_42083_C03_22_2b-2-696x696.jpg",
+      "category": "1",
+      "shortDesc": "My Mexican grandmother would use leftover corn tortilla chips in our meatloaf and everyone loved it! They all wanted seconds along with the recipe. A delicious Mexican-American comfort food.",
+      "longDesc": "In a large skillet, cook beef and onion over medium heat until meat is no longer pink; drain. Stir in the salsa, beans, dressing, taco seasoning and cumin. Place 3 tortillas in an 11x7-in. baking dish coated with cooking spray. Layer with half of the meat mixture, sour cream and cheese. Repeat layers.Cover and bake at 400° for 25 minutes. Uncover; bake until heated through, 5-10 minutes longer. Let stand for 5 minutes; top with lettuce, tomato and cilantro.",
+      "createDate": "2020-02-06 23:15:10"
+    },
+    {
+      "name": "Fluffy Pancakes",
+      "shortDesc": "Tall and fluffy. These pancakes are just right. Topped with strawberries and whipped cream, they are impossible to resist.",
+      "category": "2",
+      "longDesc": "Combine milk with vinegar in a medium bowl and set aside for 5 minutes to \"sour\".\nCombine flour, sugar, baking powder, baking soda, and salt in a large mixing bowl. Whisk egg and butter into \"soured\" milk. Pour the flour mixture into the wet ingredients and whisk until lumps are gone.\nHeat a large skillet over medium heat, and coat with cooking spray. Pour 1/4 cupfuls of batter onto the skillet, and cook until bubbles appear on the surface. Flip with a spatula, and cook until browned on the other side.",
+      "picture": "https://www.tasteofhome.com/wp-content/uploads/2017/10/Enchilada-Casser-Ole-_EXPS_WRSM17_42083_C03_22_2b-2-696x696.jpg",
+      "createDate": "2020-05-06 23:15:10",
+      "id": 7
+    },
+    {
+      "name": "Keto Chicken-Broccoli Casserole",
+      "shortDesc": "Following the keto diet, this casserole is cheesy, creamy, and easy to prepare. Any cheese can be used and any cut of chicken.",
+      "category": "1",
+      "longDesc": "Preheat the oven to 350 degrees F (175 degrees C).\nMelt butter in a large skillet over medium heat. Whisk in cream cheese, Gouda cheese, mayonnaise, chicken broth, and ranch dressing mix. Reduce heat to low and cook, stirring constantly, until completely incorporated, 4 to 5 minutes. Stir in broccoli, chicken, salt, and pepper until combined. Transfer to a casserole dish and top with Cheddar cheese.\nBake in the preheated oven until cheese is melted and broccoli-chicken mixture is heated through, about 25 minutes. Switch the oven to broil, and cool until cheese starts to brown, 2 to 4 minutes.",
+      "picture": "https://www.tasteofhome.com/wp-content/uploads/2017/10/Enchilada-Casser-Ole-_EXPS_WRSM17_42083_C03_22_2b-2-696x696.jpg",
+      "createDate": "2019-02-01 23:33:28",
+      "id": 8
+    }
+  ]
+}
