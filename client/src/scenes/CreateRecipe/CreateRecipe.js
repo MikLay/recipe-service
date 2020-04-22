@@ -6,7 +6,7 @@ import moment from "moment";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import Form from "react-bootstrap/Form";
-import {CATEGORIES} from "../../constants/entity_config";
+import { CATEGORIES } from "../../constants/entity_config";
 
 const CreateForm = styled.div`
   margin-top: 40px;
@@ -18,12 +18,15 @@ const CreateRecipe = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = data => {
-    api.createRecipe({
-      ...data,
-      picture:
-        "https://www.tasteofhome.com/wp-content/uploads/2017/10/Enchilada-Casser-Ole-_EXPS_WRSM17_42083_C03_22_2b-2-696x696.jpg",
-      createDate: moment().format("YYYY-MM-DD HH:mm:SS")
-    });
+    api
+      .createRecipe({
+        ...data,
+        author: localStorage.getItem("user_id"),
+        picture:
+          "https://www.tasteofhome.com/wp-content/uploads/2017/10/Enchilada-Casser-Ole-_EXPS_WRSM17_42083_C03_22_2b-2-696x696.jpg",
+        createDate: moment().format("YYYY-MM-DD HH:mm:SS")
+      })
+      .then(() => {});
     history.push("/recipes");
   };
 
@@ -65,14 +68,17 @@ const CreateRecipe = () => {
 
           <div className="form-group">
             <label>Category</label>
-            <Form.Control as="select" name="category" ref={register} custom defaultValue={CATEGORIES[0].key}>
+            <Form.Control
+              as="select"
+              name="category"
+              ref={register}
+              custom
+              defaultValue={CATEGORIES[0].key}
+            >
               {CATEGORIES.map(category => (
-                  <option
-                      key={category.key}
-                      value={category.key}
-                  >
-                    {category.text}
-                  </option>
+                <option key={category.key} value={category.key}>
+                  {category.text}
+                </option>
               ))}
             </Form.Control>
           </div>
