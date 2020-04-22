@@ -34,18 +34,22 @@ const CreateButtonCol = styled.div`
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
-  const [sort, setSort] = useState(localStorage.getItem("sorting"));
+  const [sort, setSort] = useState(localStorage.getItem("sorting") || SORTINGS[0]);
   const [searchName, setSearchName] = useState("");
   const [category, setCategory] = useState(CATEGORIES[0]);
   const history = useHistory();
+  const [signedIn, setSignIn] = useState(false);
 
   useEffect(() => {
+    setSignIn(!!localStorage.getItem("user_token"));
     setSort(
       localStorage.getItem("sorting")
         ? SORTINGS[localStorage.getItem("sorting")]
         : SORTINGS[0]
     );
-    api.fetchAllRecipes().then(setRecipes);
+    api.fetchAllRecipes().then(recipes => {
+      setRecipes(recipes);
+    });
   }, []);
 
   const renderRecipesCards = recipes
@@ -106,15 +110,17 @@ const Recipes = () => {
                   ))}
                 </Form.Control>
               </Col>
-              <Col as={CreateButtonCol}>
-                <Button
-                  size="lg"
-                  variant="primary"
-                  onClick={() => history.push("/add")}
-                >
-                  <i className="fa fa-plus" /> Create
-                </Button>
-              </Col>
+              {signedIn && (
+                <Col as={CreateButtonCol}>
+                  <Button
+                    size="lg"
+                    variant="primary"
+                    onClick={() => history.push("/add")}
+                  >
+                    <i className="fa fa-plus" /> Create
+                  </Button>
+                </Col>
+              )}
             </Row>
           </Form.Group>
         </Form>
