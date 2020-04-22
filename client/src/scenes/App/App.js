@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import {Redirect, Route, Router, Switch} from "react-router-dom";
+import { Redirect, Route, Router, Switch } from "react-router-dom";
 import history from "../../history";
 import { url } from "../../constants";
 import { Footer, Header } from "../../components";
 import { Recipes, Recipe, EditRecipe, CreateRecipe } from "../";
+import AuthPage from "../Auth/AuthPage";
+import Profile from "../Profile/Profile";
 
 const PageContainer = styled.div`
-
-position: relative;
+  position: relative;
   min-height: 100%;
-    display: flex !important;
+  display: flex !important;
   flex-direction: column !important;
   background: antiquewhite;
 `;
 
 const ContentContainer = styled.main`
   flex: 1 0 auto !important;
-  :after{
-  
+  :after {
   }
 `;
 
@@ -30,9 +30,12 @@ class App extends Component {
           <Router history={history}>
             <Header />
             <Switch>
-              <ContentContainer role="main"
-              >
-                <Route exact path="/"><Redirect to={url.URL_RECIPES}/></Route>
+              <ContentContainer role="main">
+                <Route exact path={[url.URL_AUTH]} component={AuthPage} />
+                <Route exact path={[url.URL_PROFILE]} component={Profile} />
+                <Route exact path="/">
+                  <Redirect to={url.URL_RECIPES} />
+                </Route>
                 <Route
                   path={[url.URL_RECIPES]}
                   exact
