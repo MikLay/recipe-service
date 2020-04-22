@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:client": "cd client && yarn run start",
-    "start:server": "cd server && npm run start",
+    "start:server": "cd server && node server.js",
     "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "devDependencies": {
+    "react-scripts": "3.4.1",
+    "concurrently": "^5.1.0"
   }
 }
